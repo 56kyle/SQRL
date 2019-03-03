@@ -2,12 +2,12 @@ from flask import Flask, render_template, url_for
 app = Flask(__name__)
 
 
-@app.route('/')
-def home(methods="GET"):
+@app.route('/', methods='GET')
+def home():
     return render_template(url_for('home'))
 
 
-@app.route('/connections')
+@app.route('/connections', methods='GET')
 def connections():
     return render_template(url_for('connections'))
 
