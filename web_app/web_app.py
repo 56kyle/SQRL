@@ -1,13 +1,16 @@
+from google.ap
+
 from flask import Flask, render_template, url_for
+
 app = Flask(__name__)
 
 
-@app.route('/', methods='GET')
+@app.route('/')
 def home():
     return render_template(url_for('home'))
 
 
-@app.route('/connections', methods='GET')
+@app.route('/connections')
 def connections():
     return render_template(url_for('connections'))
 
@@ -16,6 +19,9 @@ def connections():
 def a_conn(conn):
     return render_template(url_for(conn))
 
+@app.route('/admin')
+def admin():
+    return render_template(url_for('home'))
 
 if __name__ == '__main__':
     app.run(debug=True)
