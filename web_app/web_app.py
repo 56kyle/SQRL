@@ -17,7 +17,7 @@ def connections():
 
 @app.route('/connections/<conn>', methods=['GET', 'POST'])
 def a_conn(conn):
-    return render_template(url_for(conn))
+    return render_template(url_for(device))
 
 @app.route('/admin')
 def admin():
