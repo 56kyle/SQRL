@@ -1,4 +1,3 @@
-from google.ap
 
 from flask import Flask, render_template, url_for
 
@@ -17,7 +16,7 @@ def connections():
 
 @app.route('/connections/<conn>', methods=['GET', 'POST'])
 def a_conn(conn):
-    return render_template(url_for(device))
+    return render_template(url_for(conn))
 
 @app.route('/admin')
 def admin():

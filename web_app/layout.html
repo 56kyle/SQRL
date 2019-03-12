@@ -13,9 +13,21 @@
 </head>
 
 <body>
-    <div class="header"></div>
-    {%block main%}
-    {%blockend main%}
+
+    <div class="wrapper" id="main">
+        <div class="header">
+            <div class="logo"></div>
+            <div class="navigation"></div>
+        </div>
+        <div class="content-wrap">
+            <div class="sidebar"></div>
+            <div class="content">
+                {% block main %}
+                {% blockend main %}
+            </div>
+        </div>
+    </div>
+
     <script src="static/scripts.js"></script>
 
 </body>
