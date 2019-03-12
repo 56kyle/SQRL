@@ -1,0 +1,38 @@
+html {
+
+}
+
+body {
+
+}
+
+.wrapper {
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+    grid-template-columns-columns: auto;
+
+}
+
+.header {
+
+}
+
+.main {
+
+}
+
+.sidebar {
+
+}
+
+.title {
+
+}
+
+.content {
+
+}
+
+
+
+
